@@ -29,6 +29,7 @@ module.exports = {
     open: true,
     port: PORT,
     https: false,
+    proxy: '',
     overlay: {
       warnings: false,
       errors: true
