@@ -51,7 +51,9 @@ module.exports = {
       .end()
     // 删除旧loader，添加新svg loader
     // 删除的原因是原有的svg是用file-loader解析的，现在改用svg-sprite-loader解析
-    // 注：可以通过vue inspect > output.json 查看loader信息
+    // 注: 通过vue inspect > output.js 查看loader信息
+    //    通过vue inspect --rules 查看规则信息
+    // 参考：https://cli.vuejs.org/zh/guide/webpack.html#%E5%AE%A1%E6%9F%A5%E9%A1%B9%E7%9B%AE%E7%9A%84-webpack-%E9%85%8D%E7%BD%AE
     config.module.rules.delete('svg')
     config.module
       .rule('svg')
