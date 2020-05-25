@@ -45,8 +45,7 @@ module.exports = {
       .use('vue-loader')
       .loader('vue-loader')
       .tap(options => {
-        console.log('===>', options)
-        // options.compilerOptions.preserveWhitespace = true
+        options.compilerOptions.preserveWhitespace = true
         return options
       })
       .end()
