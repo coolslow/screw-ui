@@ -2,15 +2,10 @@
   "name": "screw-ui",
   "version": "0.1.0",
   "description": "A Vue.js 2.0 Web UI toolkit",
-  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -51,5 +46,10 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
 }
