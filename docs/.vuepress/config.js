@@ -2,7 +2,7 @@ module.exports = {
   title: 'Screw UI',
   description: '基于Vue.js 2.0的轻量级Web UI组件库',
   logo: 'screw.png',
-  base: './',
+  base: '/screw-ui/',
   port: 3001,
   // head: [
   //   ['/', { rel: 'icon', href: './public/screw.png' }]
