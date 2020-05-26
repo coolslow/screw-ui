@@ -13,12 +13,6 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: '介绍',
-        path: '/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1, // 可选的, 默认值是 1
-      },
-      {
         title: '组件',
         path: '/guide/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
         collapsable: false, // 可选的, 默认值是 true,
