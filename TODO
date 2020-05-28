@@ -19,7 +19,7 @@ Todo:
   ☐ checkbox-button
   ☐ checkbox-group
   ☐ checkbox
-  ☐ col
+  ✘ col @cancelled(20-05-26 12:05)
   ☐ collapse-item
   ☐ collapse
   ☐ color-picker
@@ -60,7 +60,7 @@ Todo:
   ☐ radio-group
   ☐ radio
   ☐ rate
-  ☐ row
+  ✘ row @cancelled(20-05-26 12:06)
   ☐ scrollbar
   ☐ select
   ☐ slider
