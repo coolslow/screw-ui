@@ -1,0 +1,21 @@
+{
+  "name": "screw-ui-theme",
+  "version": "1.0.0",
+  "description": "Screw-UI Theme Proposal",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "keywords": [
+    "screw-ui",
+    "theme"
+  ],
+  "author": "mizhon",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "less-plugin-autoprefix": "^2.0.0"
+  }
+}
