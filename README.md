@@ -2,28 +2,58 @@
 
 ## Project setup
 
-```
+```bash
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+sync compile component and theme less file
 
-```
-npm run serve
+```bash
+npm run dev
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for lib
 
+```bash
+npm run build:components
 ```
-npm run build
+
+### Compiles and minifies for theme
+
+```bash
+npm run build:theme
 ```
+
+### Compiles and dev for theme
+
+```bash
+npm run watch:theme
+```
+
+### Compiles and dev for docs
+
+```bash
+npm run docs:dev
+```
+
+### Compiles and minifies for docs
+
+```bash
+npm run docs:build
+```
+
 
 ### Lints and fixes files
 
-```
+```bash
 npm run lint
 ```
 
-### Customize configuration
+### Git commit use commitizen
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```bash
+npm run commit
+# or
+git cz
+```
