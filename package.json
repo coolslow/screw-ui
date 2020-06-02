@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:components": "vue-cli-service build --target lib --name screw-ui --dest lib ./packages/index.js",
+    "build:components": "vue-cli-service build --target lib --name screw-ui --dest lib ./packages/components/index.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "lint": "vue-cli-service lint",
