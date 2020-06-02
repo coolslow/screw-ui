@@ -1,5 +1,5 @@
 <template>
-  <button class="screw-btn">
+  <button class="s-button">
     <slot></slot>
   </button>
 </template>
@@ -23,6 +23,3 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
-@import './button.less';
-</style>

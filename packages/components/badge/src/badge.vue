@@ -10,7 +10,3 @@ export default {
   props: {}
 }
 </script>
-
-<style lang="less" scoped>
-@import './badge.less';
-</style>

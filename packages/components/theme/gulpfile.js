@@ -8,12 +8,12 @@ const postcss = require('gulp-postcss')
 const cssnano = require('cssnano')
 const autoprefixer = require('autoprefixer')
 
-// 删除
+// clean task
 function clean() {
   return del('./lib', { force: true })
 }
 
-// Less to CSS
+// compile less to css
 function compile() {
   return src('./src/**/*.less')
     .pipe(less({
