@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "bulid:theme": "gulp build --gulpfile packages/components/theme/gulpfile.js",
-    "build:components": "vue-cli-service build --target lib --name screw-ui --dest lib ./packages/components/index.js",
+    "build:theme": "gulp build --gulpfile packages/components/theme/gulpfile.js",
+    "build:components": "vue-cli-service build --target lib --name screw-ui --dest lib ./packages/components/index.js && npm run build:theme",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "lint": "vue-cli-service lint",

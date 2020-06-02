@@ -35,7 +35,7 @@
 /// Border
 @--border-width-base: 1px;
 @--border-style-base: solid;
-@--border-color-base: darken(#ffffff, 30%); /* #e6e6e6 */
+@--border-color-base: darken(#ffffff, 15%); /* #d9d9d9 */
 
 /// Link Color
 @--color-link: @--color-primary-light;
@@ -58,3 +58,12 @@
 /// z-index
 @--zindex-base: 1;
 @--zindex-popper: 2000;
+
+// Component Types
+@--component-types: primary, success, warning, danger, info;
+
+/* 通过映射的方式传入不通的样式 */
+// NOTE: 思路一
+// .screw-colors(color) {
+//   base: @--color-white + color;
+// }
