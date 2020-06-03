@@ -1,11 +1,9 @@
 'use strict'
 
 const del = require('del')
-const path = require('path')
-const less = require('gulp-less')
+const sass = require('gulp-sass')
 const { series, src, dest } = require('gulp')
 const postcss = require('gulp-postcss')
-// const cssnano = require('cssnano')
 const autoprefixer = require('autoprefixer')
 
 // clean task
@@ -15,13 +13,10 @@ function clean() {
 
 // compile less to css
 function compile() {
-  return src('./src/**/*.less')
-    .pipe(less({
-      paths: [path.join(__dirname, './src')]
-    }))
+  return src('./src/**/*.scss')
+    .pipe(sass.sync())
     .pipe(postcss([
       autoprefixer()
-      // cssnano()
     ])) // PostCSS plugins 是否考虑使用 PostCSS 统一处理 @mizhon
     .pipe(dest('./lib'))
 }

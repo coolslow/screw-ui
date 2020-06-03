@@ -1,0 +1,24 @@
+// @import '../common/_vars.less';
+// @import '../common//_mixins.less';
+
+// .sw-button {
+//   display: inline;
+//   box-sizing: border-box;
+//   white-space: nowrap;
+//   line-height: 1;
+//   text-align: center;
+//   font-weight: @--font-weight-base;
+//   outline: none;
+//   cursor: pointer;
+//   // appearance: none // 实验性质，Element添加了该属性，暂时去掉
+//   transition: 0.1s;
+//   user-select: none;
+// }
+
+// each(@--component-types, {
+//   .sw-button--@{value} {
+//     // background-color: @--color-white;
+//     // background-color: e('@--color-'); Note the 'e' usage
+//     border: @--border-width-base, @--border-style-base, @--border-color-base;
+//   }
+// })
