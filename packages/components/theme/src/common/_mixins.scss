@@ -12,6 +12,7 @@ $--namespace: 'sw';
 }
 
 @mixin e($element) {
+  $ELEMENT: $element;
 }
 
 @mixin m($modifier) {
