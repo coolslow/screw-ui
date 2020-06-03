@@ -1,7 +1,7 @@
 @import '../common/_vars.less';
 @import '../common//_mixins.less';
 
-.sc-button {
+.sw-button {
   display: inline;
   box-sizing: border-box;
   white-space: nowrap;
@@ -10,32 +10,38 @@
   font-weight: @--font-weight-base;
   outline: none;
   cursor: pointer;
-  background-color: @--color-white;
-  border: @--border-width-base, @--border-style-base, @--border-color-base;
   // appearance: none // 实验性质，Element添加了该属性，暂时去掉
   transition: 0.1s;
   user-select: none;
 }
 
-@--button-type: primary-btn;
-
-// Example
-.alert {
-  padding: 20px;
-  position: relative;
-  width: 500px;
-
-  .e(danger; {background-color: #c00; color: #300;});
-
-  .e(
-    @--button-type; {display: inline-block; position: absolute; right: 20px; top:
-      20px; .m(danger; {color: #c00;}) ;}
-  );
-}
-
-@colors: @--component-types;
-each(@colors, {
-  .sel-@{value} {
-    a: b;
+each(@--component-types, {
+  .sw-button--@{value} {
+    // background-color: @--color-white;
+    // background-color: e('@--color-'); Note the 'e' usage
+    border: @--border-width-base, @--border-style-base, @--border-color-base;
   }
-});
+})
+
+// @--button-type: primary-btn;
+
+// // Example
+// .alert {
+//   padding: 20px;
+//   position: relative;
+//   width: 500px;
+
+//   .e(danger; {background-color: #c00; color: #300;});
+
+//   .e(
+//     @--button-type; {display: inline-block; position: absolute; right: 20px; top:
+//       20px; .m(danger; {color: #c00;}) ;}
+//   );
+// }
+
+// @colors: @--component-types;
+// each(@colors, {
+//   .sel-@{value} {
+//     a: b;
+//   }
+// });
