@@ -4,60 +4,66 @@
 
 /* ---[ Basic Variable Settings ]-------------------------- */
 
+/// z-index
+$--zindex-base: 1;
+$--zindex-popper: 2000;
+
+/// Font Weight
+$--font-weight-base: 500;
+
 /// Base Color
-// @--color-white: #ffffff;
-// @--color-black: #000000;
+$--color-white: #ffffff;
+$--color-black: #000000;
 
-// @--color-primary: #42a5f5;
-// @--color-success: #66bb6a;
-// @--color-warning: #ffee58;
-// @--color-danger: #ff7043;
-// @--color-info: #bdbdbd;
+$--color-primary: #42a5f5;
+$--color-success: #66bb6a;
+$--color-warning: #ffee58;
+$--color-danger: #ff7043;
+$--color-info: #bdbdbd;
 
-// @--color-primary-light: lighten(@--color-primary, 10%); /* #72bcf8 */
-// @--color-success-light: lighten(@--color-success, 10%); /* #89cb8c */
-// @--color-warning-light: lighten(@--color-warning, 10%); /* #fff38b */
-// @--color-danger-light: lighten(@--color-danger, 10%); /* #ff9776 */
-// @--color-info-light: lighten(@--color-info, 10%); /* #d7d7d7 */
+$--color-primary-light: lighten($--color-primary, 10%); /* #72bcf8 */
+$--color-success-light: lighten($--color-success, 10%); /* #89cb8c */
+$--color-warning-light: lighten($--color-warning, 10%); /* #fff38b */
+$--color-danger-light: lighten($--color-danger, 10%); /* #ff9776 */
+$--color-info-light: lighten($--color-info, 10%); /* #d7d7d7 */
 
-// /// Font Color
-// @--color-text-primary: #303133;
-// @--color-text-regular: #606266;
-// @--color-text-secondary: #909399;
-// @--color-text-placeholder: #c0c4cc;
+/// Font Color
+$--color-text-primary: #303133;
+$--color-text-regular: #606266;
+$--color-text-secondary: #909399;
+$--color-text-placeholder: #c0c4cc;
 
-// /// Font Size
-// @--font-size-base: 14px;
+/// Font Size
+$--font-size-large: 16px;
+$--font-size-base: 14px;
+$--font-size-small: 12px;
 
-// @--font-size-large: 16px;
-// @--font-size-small: 12px;
+/// Border
+$--border-width-base: 1px;
+$--border-style-base: solid;
+$--border-color-base: darken(#ffffff, 15%); /* #d9d9d9 */
 
-// /// Border
-// @--border-width-base: 1px;
-// @--border-style-base: solid;
-// @--border-color-base: darken(#ffffff, 15%); /* #d9d9d9 */
+/// Link Color
+$--color-link: $--color-primary-light;
 
-// /// Link Color
-// @--color-link: @--color-primary-light;
+/// Button
+$--button-border-radius-base: 4px;
+$--button-border-radius-small: 2px;
+$--button-default-text-color: $--color-text-regular;
+$--button-default-background-color: $--color-white;
+$--button-default-border-color: $--border-color-base;
+$--button-font-size-base: $--font-size-base;
+$--button-font-weight-base: $--font-weight-base;
+$--button-padding-vertical: 12px;
+$--button-padding-horizontal: 20px;
 
-// /// Button
-// @--button-default-background-color: @--color-white;
-// @--button-default-border-color: @--border-color-base;
+/// Font
+$--font-size-base: 14px;
+$--font-size-medium: 16px;
+$--font-size-small: 13px;
+$--font-size-extra-small: 12px;
+$--font-size-large: 18px;
+$--font-size-extra-large: 20px;
 
-// /// Font
-// @--font-size-base: 14px;
-// @--font-size-medium: 16px;
-// @--font-size-small: 13px;
-// @--font-size-extra-small: 12px;
-// @--font-size-large: 18px;
-// @--font-size-extra-large: 20px;
-
-// /// Font Weight
-// @--font-weight-base: 500;
-
-// /// z-index
-// @--zindex-base: 1;
-// @--zindex-popper: 2000;
-
-// // Component Types
-// @--component-types: primary, success, warning, danger, info;
+// Component State Types
+$--component-state-types: primary, success, warning, danger, info;

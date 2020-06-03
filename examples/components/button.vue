@@ -1,5 +1,5 @@
 <template>
   <div>
-    <screw-button>button</screw-button>
+    <screw-button>按钮</screw-button>
   </div>
 </template>

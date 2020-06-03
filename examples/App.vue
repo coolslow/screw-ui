@@ -3,6 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <!-- <screw-badge></screw-badge> -->
+    <!-- <screw-button>Hello</screw-button> -->
     <router-view></router-view>
   </div>
 </template>

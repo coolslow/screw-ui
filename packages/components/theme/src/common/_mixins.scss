@@ -1,1 +1,30 @@
-/* -------- BEM -------- */
+/// Name Space
+$--namespace: 'sw';
+
+/* -------- BEM Rules -------- */
+@mixin b($block) {
+  // 为$block添加命名规则
+  $BLOCK: $--namespace + '-' + $block !global;
+
+  .#{$BLOCK} {
+    @content;
+  }
+}
+
+@mixin e($element) {
+}
+
+@mixin m($modifier) {
+}
+
+/* -------- Button Mixins -------- */
+@mixin button-size(
+  $padding-vertical,
+  $padding-horizontal,
+  $font-size,
+  $border-radius
+) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  border-radius: $border-radius;
+}
