@@ -31,8 +31,6 @@
 
 // 生成对应类型样式代码
 @mixin button-variant($type) {
-  $T: $type;
-  @debug $T;
   @include condition($type);
 }
 

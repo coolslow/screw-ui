@@ -15,7 +15,7 @@ $--color-text-placeholder: #c0c4cc;
 
 /// 主题色 Mapping
 $--theme-colors: (
-  'primary': $--color-primary,
+  'primary': $--color-white,
   'success': $--color-success,
   'warning': $--color-warning,
   'danger': $--color-danger,
@@ -24,7 +24,7 @@ $--theme-colors: (
 
 /// 主题背景颜色 Mapping
 $--theme-background-colors: (
-  'primary': $--color-primary,
+  'primary': $--color-white,
   'success': $--color-success,
   'warning': $--color-warning,
   'danger': $--color-danger,
@@ -33,7 +33,7 @@ $--theme-background-colors: (
 
 /// 主题背景颜色 Mapping
 $--theme-border-colors: (
-  'primary': $--color-primary,
+  'primary': $--color-white,
   'success': $--color-success,
   'warning': $--color-warning,
   'danger': $--color-danger,
