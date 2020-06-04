@@ -60,6 +60,14 @@ $--button-disabled-font-color: $--color-text-placeholder;
 $--button-disabled-background-color: $--color-white;
 $--button-disabled-border-color: #ebeef5;
 
+$--button-primary-font-color: $--color-white;
+$--button-primary-background-color: $--color-primary;
+$--button-primary-border-color: $--color-primary;
+
+$--button-danger-font-color: $--color-white;
+$--button-danger-background-color: $--color-danger;
+$--button-danger-border-color: $--color-danger;
+
 /// Font
 $--font-size-base: 14px;
 $--font-size-medium: 16px;

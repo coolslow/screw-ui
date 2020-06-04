@@ -1,21 +1,27 @@
 /// Name Space
 $--namespace: 'sw';
 
-/* -------- BEM Rules -------- */
+/** -------- BEM Rules -------- */
 @mixin b($block) {
   // 为$block添加命名规则
-  $BLOCK: $--namespace + '-' + $block !global;
+  $B: $--namespace + '-' + $block !global;
 
-  .#{$BLOCK} {
+  .#{$B} {
     @content;
   }
 }
 
 @mixin e($element) {
-  $ELEMENT: $element;
+  $E: $element;
 }
 
 @mixin m($modifier) {
+  $M: & + '--' + $modifier;
+  @at-root {
+    #{$M} {
+      @content;
+    }
+  }
 }
 
 /* -------- Button Mixins -------- */
@@ -28,4 +34,10 @@ $--namespace: 'sw';
   padding: $padding-vertical $padding-horizontal;
   font-size: $font-size;
   border-radius: $border-radius;
+}
+
+@mixin button-variant($color, $background-color, $border-color) {
+  color: $color;
+  background-color: $background-color;
+  border-color: $border-color;
 }

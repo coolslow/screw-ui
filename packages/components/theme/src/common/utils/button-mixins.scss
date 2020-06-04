@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+@import '../utils/themes';
+@import '../utils/measures';
+/** 将基础颜色、尺寸进行组合以生成按钮组件样式 */
+
+/* 设置按钮尺寸 */
+@mixin button-size {
+  // 按钮尺寸
+  padding: $--padding-vertical-base $--padding-horizontal-base;
+  font-size: $--font-size-base;
+  border-radius: $--border-radius-base;
+  border: $--border-width-base $--border-style-base darken($--color-white, 15%);
+  background-color: $--color-white;
+  color: $--color-text-regular;
+}
+
+/* 设置按钮伪类 */
+@mixin button-pseudo {
+  &:hover,
+  &:focus {
+    color: $--color-primary;
+    border-color: lighten($--color-primary, 10%); // #72bcf8
+    // background-color: mix($--color-white, $--color-primary, 90%);
+  }
+
+  &:active {
+    color: mix($--color-black, $--color-primary, 10%);
+    border-color: mix($--color-black, $--color-primary, 10%);
+  }
+}
+
+@mixin button-variant($type) {
+}
