@@ -30,7 +30,7 @@ $types: primary, success, warning, danger, info;
   // 遍历设置不同类型按钮（颜色）属性
   @each $type in $types {
     @include m($type) {
-      @debug $type;
+      @include button-variant($type);
     }
   }
 }
