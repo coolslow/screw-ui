@@ -10,7 +10,7 @@
     "build:components": "vue-cli-service build --target lib --name screw-ui --dest lib ./packages/components/index.js && npm run build:theme",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "watch:theme": "nodemon --watch 'packages/components/theme/src/**/*' -e less --exec 'npm run build:theme'",
+    "watch:theme": "nodemon --watch 'packages/components/theme/src/**/*' -e scss,sass --exec 'npm run build:theme'",
     "lint": "vue-cli-service lint",
     "commit": "git-cz"
   },
