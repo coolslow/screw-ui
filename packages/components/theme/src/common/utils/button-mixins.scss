@@ -41,9 +41,9 @@
 
   &:hover,
   &:focus {
-    background: map-get($--theme-colors, $type);
-    border-color: map-get($--theme-background-colors, $type);
-    color: $--color-white; // map-get($--theme-border-colors, $type);
+    background: lighten(map-get($--theme-colors, $type), 10%);
+    border-color: lighten(map-get($--theme-background-colors, $type), 10%);
+    color: $--color-white;
   }
 }
 
