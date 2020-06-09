@@ -1,7 +1,10 @@
 @import '../common/mixins';
 @import '../common/utils/button-mixins';
 
+// 按钮类型
 $types: primary, success, warning, danger, info;
+// 按钮尺寸
+$sizes: small, mini;
 
 @include b(button) {
   // Button 基础属性
@@ -20,8 +23,8 @@ $types: primary, success, warning, danger, info;
     margin-left: 10px;
   }
 
-  // 设置按钮尺寸
-  @include button-size;
+  // 设置按钮默认尺寸
+  @include button-default-size;
 
   // 设置按钮伪类
   @include button-pseudo;
@@ -29,7 +32,14 @@ $types: primary, success, warning, danger, info;
   // 遍历设置不同类型按钮（颜色）属性
   @each $type in $types {
     @include m($type) {
-      @include button-variant($type);
+      @include button-type-variant($type);
+    }
+  }
+
+  // 遍历设置不同按钮（尺寸）属性
+  @each $size in $sizes {
+    @include m($size) {
+      @include button-size-variant($size);
     }
   }
 }

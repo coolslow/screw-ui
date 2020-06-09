@@ -1,10 +1,9 @@
 @charset 'UTF-8';
-@import '../utils/themes';
-@import '../utils/measures';
+@import '../vars';
 /** 将基础颜色、尺寸进行组合以生成按钮组件样式 */
 
 /* 设置按钮尺寸 */
-@mixin button-size {
+@mixin button-default-size {
   // 按钮尺寸
   padding: $--padding-vertical-base $--padding-horizontal-base;
   font-size: $--font-size-base;
@@ -30,21 +29,31 @@
 }
 
 // 生成对应类型样式代码
-@mixin button-variant($type) {
-  @include condition($type);
+@mixin button-type-variant($type) {
+  @include type-condition($type);
 }
 
-// @mixin add-to-end($param) {
-//   @at-root {
-//     & .#{$param} {
-//       @content;
-//     }
-//   }
-// }
-
 // 条件判断
-@mixin condition($type) {
-  color: map-get($--theme-colors, $type);
+@mixin type-condition($type) {
+  color: map-get($--theme-font-colors, $type);
   background-color: map-get($--theme-background-colors, $type);
   border-color: map-get($--theme-border-colors, $type);
+
+  &:hover,
+  &:focus {
+    background: map-get($--theme-colors, $type);
+    border-color: map-get($--theme-background-colors, $type);
+    color: $--color-white; // map-get($--theme-border-colors, $type);
+  }
+}
+
+@mixin button-size-variant($size) {
+  @include size-condition($size);
+}
+
+@mixin size-condition($size) {
+  padding: map-get($--button-vertical-padding-size, $size)
+    map-get($--button-horizontal-padding-size, $size);
+  font-size: map-get($--button-font-size, $size);
+  border-radius: map-get($--button-border-radius, $size);
 }

@@ -1,5 +1,12 @@
 <template>
-  <button class="sw-button">
+  <button
+    class="sw-button"
+    @click="handleClick"
+    :class="[
+      type ? 'sw-button--' + type : '',
+      btnSize ? 'sw-button--' + btnSize : ''
+    ]"
+  >
     <slot></slot>
   </button>
 </template>
@@ -8,7 +15,10 @@
 export default {
   name: 'ScrewButton',
   props: {
-    type: {},
+    type: {
+      type: String,
+      default: ''
+    },
     icon: {
       type: String,
       default: ''
@@ -19,6 +29,19 @@ export default {
     size: {
       type: String,
       default: ''
+    }
+  },
+  computed: {
+    btnSize() {
+      return this.size
+    },
+    btnDisabled() {
+      return this.disabled
+    }
+  },
+  methods: {
+    handleClick(evt) {
+      this.$emit('click', evt)
     }
   }
 }

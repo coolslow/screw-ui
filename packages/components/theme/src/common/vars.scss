@@ -1,0 +1,100 @@
+/**
+ * Measures
+ * ------------------------------------------------ */
+
+/// z-index
+$--zindex-base: 1;
+$--zindex-popper: 1000;
+
+/// Font Size
+$--font-size-base: 14px;
+$--font-size-small: 13px;
+$--font-size-mini: 12px;
+$--font-size-large: 16px;
+$--font-size-extra-large: 18px;
+
+/// Border
+$--border-width-base: 1px;
+$--border-style-base: solid;
+$--border-radius-base: 4px;
+$--border-radius-small: 3px;
+$--border-radius-mini: 3px;
+
+/// Padding
+$--padding-vertical-base: 12px;
+$--padding-horizontal-base: 20px;
+$--padding-vertical-small: 10px;
+$--padding-horizontal-small: 18px;
+$--padding-vertical-mini: 8px;
+$--padding-horizontal-mini: 16px;
+
+/// Button 按钮垂直padding尺寸
+$--button-vertical-padding-size: (
+  'medium': $--padding-vertical-base,
+  'small': $--padding-vertical-small,
+  'mini': $--padding-vertical-mini
+);
+
+/// Button 按钮水平padding尺寸
+$--button-horizontal-padding-size: (
+  'medium': $--padding-horizontal-base,
+  'small': $--padding-horizontal-small,
+  'mini': $--padding-horizontal-mini
+);
+
+/// Button 按钮字体尺寸
+$--button-font-size: (
+  'medium': $--font-size-base,
+  'small': $--font-size-small,
+  'mini': $--font-size-mini
+);
+
+/// Button 按钮边角radius尺寸
+$--button-border-radius: (
+  'medium': $--border-radius-base,
+  'small': $--border-radius-small,
+  'mini': $--border-radius-mini
+);
+
+/**
+ * Themes
+ * ------------------------------------------------ */
+
+/// Base Color
+$--color-white: #ffffff;
+$--color-black: #000000;
+
+$--color-primary: #42a5f5;
+$--color-success: #66bb6a;
+$--color-warning: #ffee58;
+$--color-danger: #ff7043;
+$--color-info: #bdbdbd;
+
+$--color-text-primary: #303133;
+$--color-text-regular: #606266;
+$--color-text-secondary: #909399;
+$--color-text-placeholder: #c0c4cc;
+
+/// 主题色 Mapping
+$--theme-colors: (
+  'primary': $--color-white,
+  'success': $--color-success,
+  'warning': $--color-warning,
+  'danger': $--color-danger,
+  'info': $--color-info
+);
+
+/// 主题色字体颜色
+$--theme-font-colors: (
+  'primary': $--color-white,
+  'success': $--color-white,
+  'warning': $--color-white,
+  'danger': $--color-white,
+  'info': $--color-white
+);
+
+/// 主题背景颜色 Mapping
+$--theme-background-colors: $--theme-colors;
+
+/// 主题背景颜色 Mapping
+$--theme-border-colors: $--theme-colors;
