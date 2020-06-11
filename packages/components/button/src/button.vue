@@ -2,6 +2,7 @@
   <button
     class="sw-button"
     @click="handleClick"
+    :disabled="btnDisabled"
     :class="[
       type ? 'sw-button--' + type : '',
       btnSize ? 'sw-button--' + btnSize : ''
