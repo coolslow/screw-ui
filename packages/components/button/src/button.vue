@@ -5,7 +5,10 @@
     :disabled="btnDisabled"
     :class="[
       type ? 'sw-button--' + type : '',
-      btnSize ? 'sw-button--' + btnSize : ''
+      btnSize ? 'sw-button--' + btnSize : '',
+      {
+        'is-disabled': btnDisabled
+      }
     ]"
   >
     <slot></slot>

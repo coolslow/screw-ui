@@ -45,8 +45,20 @@
     border-color: lighten(map-get($--theme-background-colors, $type), 10%);
     color: $--color-white;
   }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: map-get($--theme-font-colors, $type);
+      background-color: map-get($--theme-disabled-colors, $type);
+      border-color: map-get($--theme-disabled-colors, $type);
+    }
+  }
 }
 
+// 根据$size设置button尺寸
 @mixin button-size-variant($size) {
   @include size-condition($size);
 }
@@ -56,4 +68,21 @@
     map-get($--button-horizontal-padding-size, $size);
   font-size: map-get($--button-font-size, $size);
   border-radius: map-get($--button-border-radius, $size);
+}
+
+// 设置 disabled 的按钮通用样式显示
+@mixin button-disabled {
+  @at-root {
+    &.is-disabled {
+      &,
+      &:hover,
+      &:focus {
+        cursor: not-allowed;
+        background-image: none;
+        color: $--button-disabled-color;
+        background-color: $--button-disabled-background-color;
+        border-color: $--button-disabled-border-color;
+      }
+    }
+  }
 }

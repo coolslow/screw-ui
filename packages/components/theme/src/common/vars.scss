@@ -98,3 +98,16 @@ $--theme-background-colors: $--theme-colors;
 
 /// 主题背景颜色 Mapping
 $--theme-border-colors: $--theme-colors;
+
+/// 主题disable状态的 Mapping
+$--theme-disabled-colors: (
+  'primary': lighten($--color-primary, 20%),
+  'success': lighten($--color-success, 20%),
+  'warning': lighten($--color-warning, 20%),
+  'danger': lighten($--color-danger, 20%),
+  'info': lighten($--color-info, 20%)
+);
+
+$--button-disabled-color: $--color-text-placeholder;
+$--button-disabled-background-color: $--color-white;
+$--button-disabled-border-color: lighten($--color-text-placeholder, 10%);

@@ -29,6 +29,9 @@ $sizes: small, mini;
   // 设置按钮伪类
   @include button-pseudo;
 
+  // 设置按钮disabled样式
+  @include button-disabled;
+
   // 遍历设置不同类型按钮（颜色）属性
   @each $type in $types {
     @include m($type) {
