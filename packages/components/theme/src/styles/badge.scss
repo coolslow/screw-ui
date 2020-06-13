@@ -1,0 +1,8 @@
+@import '../common/mixins';
+@import '../common/utils/badge-mixins';
+
+@include b(badge) {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+}

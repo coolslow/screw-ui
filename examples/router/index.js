@@ -12,6 +12,11 @@ export const componentRoutes = [
     component: () => import('../components/button.vue')
   },
   {
+    path: '/badge',
+    name: 'badge',
+    component: () => import('../components/badge.vue')
+  },
+  {
     path: '/tabs',
     name: 'tabs',
     component: () => import('../components/tabs.vue')
