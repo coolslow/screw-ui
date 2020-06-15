@@ -56,6 +56,12 @@ $--button-border-radius: (
   'mini': $--border-radius-mini
 );
 
+/// Badge 尺寸
+$--badge-border-radius: 10px;
+$--badge-font-size: 12px;
+$--badge-size: 18px;
+$--badge-padding: 6px;
+$--badge-border: 1px solid;
 /**
  * Themes
  * ------------------------------------------------ */
@@ -111,3 +117,9 @@ $--theme-disabled-colors: (
 $--button-disabled-color: $--color-text-placeholder;
 $--button-disabled-background-color: $--color-white;
 $--button-disabled-border-color: lighten($--color-text-placeholder, 10%);
+
+/**
+ * Badge related styles
+ * ------------------------------------------------- */
+$--badge-background-color: $--color-danger;
+$--badge-font-color: $--color-white;

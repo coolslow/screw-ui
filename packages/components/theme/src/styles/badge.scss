@@ -5,4 +5,26 @@
   position: relative;
   vertical-align: middle;
   display: inline-block;
+
+  @include e(content) {
+    display: inline-block;
+    color: $--badge-font-color;
+    background-color: $--badge-background-color;
+    border-radius: $--badge-border-radius;
+    font-size: $--badge-font-size;
+    height: $--badge-size;
+    line-height: $--badge-size;
+    padding: 0 $--badge-padding;
+    text-align: center;
+    white-space: nowrap;
+    border: $--badge-border $--badge-font-color;
+
+    @include badge-state-condition(fixed) {
+      position: absolute;
+      top: 0;
+      @include badge-state-condition(dot) {
+        right: 5px;
+      }
+    }
+  }
 }

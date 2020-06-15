@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+@import '../vars';
+
+@mixin badge-state-condition($state) {
+  @at-root {
+    &.#{'is-' + $state} {
+      @content;
+    }
+  }
+}

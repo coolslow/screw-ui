@@ -4,7 +4,6 @@
 @mixin b($block) {
   // 为$block添加命名规则 -> 'sw-'
   $B: $namespace-mark + $single-line-separator + $block !global;
-
   .#{$B} {
     @content;
   }
@@ -13,6 +12,12 @@
 @mixin e($element) {
   // 为$element添加命名规则
   $E: $element;
+  $selector: $B + $underscore-separator + $E;
+  @at-root {
+    .#{$selector} {
+      @content;
+    }
+  }
 }
 
 @mixin m($modifier) {
