@@ -1,0 +1,64 @@
+@import '../common/mixins';
+@import '../common/vars';
+
+$shapes: circle, square;
+$sizes: large, medium, small;
+
+@include b(avatar) {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  color: $--avatar-font-color;
+  background-color: $--avatar-background-color;
+
+  > img {
+    display: block;
+    height: 100%;
+    // vertical-align: middle;
+  }
+
+  // @include m(circle) {
+  //   border-radius: 50%;
+  // }
+
+  // @include m(square) {
+  //   border-radius: $--avatar-border-radius;
+  // }
+
+  @include m(icon) {
+    font-size: $--avatar-icon-font-size;
+  }
+
+  @each $shape in $shapes {
+    @include m($shape) {
+      border-radius: map-get($--avatar-shape, $shape);
+    }
+  }
+
+  // @include m(large) {
+  //   width: $--avatar-large-size;
+  //   height: $--avatar-large-size;
+  //   line-height: $--avatar-large-size;
+  // }
+
+  // @include m(medium) {
+  //   width: $--avatar-medium-size;
+  //   height: $--avatar-medium-size;
+  //   line-height: $--avatar-medium-size;
+  // }
+
+  // @include m(small) {
+  //   width: $--avatar-small-size;
+  //   height: $--avatar-small-size;
+  //   line-height: $--avatar-small-size;
+  // }
+
+  @each $size in $sizes {
+    @include m($size) {
+      width: map-get($--avatar-size, $size);
+      height: map-get($--avatar-size, $size);
+      line-height: map-get($--avatar-size, $size);
+    }
+  }
+}

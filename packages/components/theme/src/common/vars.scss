@@ -125,3 +125,28 @@ $--button-disabled-border-color: lighten($--color-text-placeholder, 10%);
  * ------------------------------------------------- */
 $--badge-background-color: $--color-danger;
 $--badge-font-color: $--color-white;
+
+/**
+ * Avatar
+ * ------------------------------------------------- */
+$--avatar-font-color: #fff !default;
+$--avatar-background-color: #C0C4CC !default;
+$--avatar-text-font-size: 14px !default;
+$--avatar-icon-font-size: 18px !default;
+$--avatar-border-radius: $--border-radius-base !default;
+$--avatar-large-size: 40px !default;
+$--avatar-medium-size: 36px !default;
+$--avatar-small-size: 28px !default;
+
+// avatar size map
+$--avatar-size: (
+  'large': $--avatar-large-size,
+  'medium': $--avatar-medium-size,
+  'small': $--avatar-small-size,
+);
+
+// avatar shape map
+$--avatar-shape: (
+  'circle': 50%,
+  'square': $--avatar-border-radius,
+);

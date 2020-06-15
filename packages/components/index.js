@@ -1,7 +1,9 @@
+import ScrewAvatar from './avatar'
 import ScrewBadge from './badge'
 import ScrewButton from './button'
 
 const components = [
+  ScrewAvatar,
   ScrewBadge,
   ScrewButton
 ]
@@ -20,6 +22,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
+  ScrewAvatar,
   ScrewBadge,
   ScrewButton
 }
