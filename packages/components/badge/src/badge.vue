@@ -6,7 +6,10 @@
         v-show="!hidden && (content || content === 0 || isDot)"
         v-text="content"
         class="sw-badge__content"
-        :class="[type, { 'is-dot': isDot, 'is-fixed': $slots.default }]"
+        :class="[
+          type ? 'sw-badge__content--' + type : '',
+          { 'is-dot': isDot, 'is-fixed': $slots.default }
+        ]"
       ></sup>
     </transition>
   </div>
@@ -24,14 +27,7 @@ export default {
     type: {
       type: String,
       validator(val) {
-        if (
-          val !== undefined &&
-          ['primary', 'success', 'warning', 'info', 'danger'].includes(val)
-        ) {
-          return 'sw-badge__content' + val
-        } else {
-          return ''
-        }
+        return ['primary', 'success', 'warning', 'info', 'danger'].includes(val)
       }
     }
   },
