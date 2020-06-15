@@ -1,7 +1,7 @@
 <template>
   <div class="badge-samples">
     <screw-badge :value="value">
-      <screw-button type="primary">测试</screw-button>
+      <screw-button type="primary" @click="handleTestClick">测试</screw-button>
     </screw-badge>
   </div>
 </template>
@@ -10,6 +10,11 @@ export default {
   data() {
     return {
       value: 98
+    }
+  },
+  methods: {
+    handleTestClick() {
+      console.log('testing ')
     }
   }
 }
