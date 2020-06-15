@@ -9,7 +9,7 @@ const modules = modulesFiles.keys().reduce((modules, modulePath) => {
   const module = modulesFiles(modulePath)
   const component = module.default
   // todo optimization
-  const name = /\.*\/(.*\.)/.exec(modulePath)[1].replace(/\./, '')
+  const name = /\.*\/(.*\.)/.exec(modulePath)[1].replace(/\./, '') || 'unknown'
   modules.push({
     path: `/${component.name || name}`,
     name: component.name || name,
