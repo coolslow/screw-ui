@@ -29,5 +29,13 @@
         right: 5px;
       }
     }
+
+    @include badge-state-condition(dot) {
+      height: $--badge-dot-size;
+      width: $--badge-dot-size;
+      padding: 0;
+      right: 0;
+      border-radius: 50%;
+    }
   }
 }

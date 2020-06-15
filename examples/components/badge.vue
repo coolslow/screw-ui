@@ -1,6 +1,6 @@
 <template>
   <div class="badge-samples">
-    <screw-badge :value="value">
+    <screw-badge is-dot>
       <screw-button type="primary" @click="handleTestClick">测试</screw-button>
     </screw-badge>
   </div>
