@@ -6,6 +6,7 @@
     <div v-for="shape in shapes" :key="shape" class="avatars">
       <screw-avatar size="large" :shape="shape" :src="src"></screw-avatar>
     </div>
+    <screw-avatar :size="100" shape="circle" :src="src"></screw-avatar>
   </div>
 </template>
 <script>
