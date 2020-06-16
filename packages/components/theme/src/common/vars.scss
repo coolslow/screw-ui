@@ -76,7 +76,7 @@ $--color-primary: #42a5f5;
 $--color-success: #48c774;
 $--color-warning: #f0bf00;
 $--color-danger: #ff3860;
-$--color-info: #f5f5f5;
+$--color-info: #909399;
 
 $--color-text-primary: #303133;
 $--color-text-regular: #606266;
@@ -130,7 +130,7 @@ $--badge-font-color: $--color-white;
  * Avatar
  * ------------------------------------------------- */
 $--avatar-font-color: #fff !default;
-$--avatar-background-color: #C0C4CC !default;
+$--avatar-background-color: #c0c4cc !default;
 $--avatar-text-font-size: 14px !default;
 $--avatar-icon-font-size: 18px !default;
 $--avatar-border-radius: $--border-radius-base !default;
@@ -142,11 +142,11 @@ $--avatar-small-size: 28px !default;
 $--avatar-size: (
   'large': $--avatar-large-size,
   'medium': $--avatar-medium-size,
-  'small': $--avatar-small-size,
+  'small': $--avatar-small-size
 );
 
 // avatar shape map
 $--avatar-shape: (
   'circle': 50%,
-  'square': $--avatar-border-radius,
+  'square': $--avatar-border-radius
 );
