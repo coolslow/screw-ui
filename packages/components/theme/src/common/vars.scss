@@ -150,3 +150,14 @@ $--avatar-shape: (
   'circle': 50%,
   'square': $--avatar-border-radius
 );
+
+/**
+ * Steps related styles
+ * ------------------------------------------------- */
+$--steps-colors: (
+  'process': $--color-text-primary,
+  'pending': $--color-text-placeholder,
+  'finished': $--color-primary,
+  'error': $--color-danger,
+  'success': $--color-success
+);

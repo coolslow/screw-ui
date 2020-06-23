@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+@import '../vars';
+
+@mixin steps-status($status) {
+  &.#{'is-' + $status} {
+    @content;
+  }
+}
