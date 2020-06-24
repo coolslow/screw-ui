@@ -1,0 +1,184 @@
+{
+  "id": "1904141",
+  "name": "screw-ui",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "vue组件库图标收集",
+  "glyphs": [
+    {
+      "icon_id": "3551",
+      "name": "急速退款",
+      "font_class": "rocket",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "29924",
+      "name": "check",
+      "font_class": "check",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "29925",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "339514",
+      "name": "QQ",
+      "font_class": "tencent",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "435978",
+      "name": "微信",
+      "font_class": "wechat",
+      "unicode": "e7e5",
+      "unicode_decimal": 59365
+    },
+    {
+      "icon_id": "453895",
+      "name": "升级公告",
+      "font_class": "upgrade",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "577354",
+      "name": "扫码",
+      "font_class": "scan",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
+      "icon_id": "627566",
+      "name": "二维码",
+      "font_class": "qrcode",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "629357",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "630128",
+      "name": "照相机",
+      "font_class": "camera",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "859687",
+      "name": "支付宝",
+      "font_class": "alipay-square",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "867237",
+      "name": "催单",
+      "font_class": "reminder",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "978353",
+      "name": "新浪微博",
+      "font_class": "weibo",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1142516",
+      "name": "眼睛",
+      "font_class": "eye-open",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "1305337",
+      "name": "首页",
+      "font_class": "homepage",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "1356161",
+      "name": "眼睛-闭",
+      "font_class": "eye-close",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "1546604",
+      "name": "消息",
+      "font_class": "message",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "3552293",
+      "name": "小程序",
+      "font_class": "wechat-applets",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "4511752",
+      "name": "计算器",
+      "font_class": "compute",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "4685781",
+      "name": "购物",
+      "font_class": "shopping",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "4945966",
+      "name": "编辑",
+      "font_class": "modify",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "5950860",
+      "name": "阿里巴巴",
+      "font_class": "alibaba",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "7340026",
+      "name": "19微信支付",
+      "font_class": "wechat-pay",
+      "unicode": "e71f",
+      "unicode_decimal": 59167
+    },
+    {
+      "icon_id": "7340027",
+      "name": "支付宝",
+      "font_class": "alipay",
+      "unicode": "e720",
+      "unicode_decimal": 59168
+    },
+    {
+      "icon_id": "7766772",
+      "name": "icon_photo",
+      "font_class": "photo",
+      "unicode": "eb9a",
+      "unicode_decimal": 60314
+    }
+  ]
+}

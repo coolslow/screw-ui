@@ -21,8 +21,8 @@ function compile() {
     .pipe(dest('./lib'))
 }
 
-// function copyfile() {
-//   return {}
-// }ta men
+function copyfile() {
+  return src('./src/fonts/**').pipe(dest('./lib/fonts'))
+}
 
-exports.build = series(clean, compile)
+exports.build = series(clean, compile, copyfile)

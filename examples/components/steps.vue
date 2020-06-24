@@ -28,3 +28,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.steps-samples {
+  display: flex;
+  width: 100%;
+}
+</style>

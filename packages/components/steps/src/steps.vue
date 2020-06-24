@@ -2,13 +2,22 @@
   <div class="sw-steps" :class="['sw-steps--' + direction]">
     <div class="sw-steps__item" v-for="(step, idx) in steps" :key="idx">
       <!-- step 节点 -->
-      <div class="sw-steps__item" :class="`is-${step.status}`">
+      <div
+        class="sw-steps__item"
+        :class="`is-${step.status}`"
+        style="flex-basis: 50%; margin-right: 0px;"
+      >
         <!-- icon 设置 -->
         <div v-if="step.icon">
           <!-- TODO Icon组件 -->
         </div>
-        <div v-else>{{ idx + 1 }}</div>
-        <div class="sw-steps__line" :class="[isLast ? '' : '']"></div>
+        <div v-else>
+          <div class="sw-steps__icon">{{ idx + 1 }}</div>
+        </div>
+        <div
+          class="sw-steps__line"
+          :class="[idx === steps.length - 1 ? 'is-last' : '']"
+        ></div>
       </div>
       <!-- step 描述信息 -->
       <div class="sw-steps__content" :class="[]">
@@ -48,10 +57,6 @@ export default {
   computed: {
     stepCounts() {
       return this.steps.length
-    },
-    // 是否为最后一个节点
-    isLast() {
-      return this.steps.length - 1
     }
   }
 }

@@ -8,6 +8,23 @@ $step-status: process, pending, finished, error, success;
 
   @include m(horizontal) {
     white-space: nowrap;
+
+    @include e(line) {
+      position: absolute;
+      border-color: inherit;
+      background-color: #c0c4cc;
+
+      // 判断是否为最后step
+      &.#{is-last} {
+        height: 0px;
+      }
+
+      height: 2px;
+      top: 10px;
+      left: 0;
+      right: 0;
+      margin: 0 10px 0 18px;
+    }
   }
 
   @include m(vertical) {
@@ -15,27 +32,23 @@ $step-status: process, pending, finished, error, success;
     flex-flow: column;
   }
 
-  @include m(container) {
-    margin: 5px 10px;
-  }
-
   @include e(item) {
     position: relative;
+    flex-shrink: 0;
     width: 100%;
+
+    @include e(icon) {
+      display: inline;
+      text-align: center;
+    }
 
     // $status: process 进行中 | pending 等待  | finished 完成 ｜ error | success
     @each $status in $step-status {
       @include steps-status($status) {
-        background-color: red;
+        // background-color: red;
         color: map-get($--steps-colors, $status);
         border-color: map-get($--steps-colors, $status);
       }
-    }
-
-    @include e(line) {
-      position: absolute;
-      border-color: inherit;
-      background-color: #c0c4cc;
     }
   }
 }
